@@ -1,0 +1,23 @@
+#spec config
+container
+languages
+
+#base page functional
+template
+method
+ls
+
+#cs object in templates
+$space ($root, $current)
+$this
+
+#parser
+string (ml_string)
+text (ml_text)
+array
+object
+int
+float
+bool
+
+#cache

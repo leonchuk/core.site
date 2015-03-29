@@ -1,0 +1,12 @@
+php_value register_globals Off
+
+#DirectorySlash Off <- Important
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*) root/.cs.php?$1 [L]
+
+<Files ".ini">
+Order allow,deny
+Deny from all
+</Files>
